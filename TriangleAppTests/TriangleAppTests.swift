@@ -36,6 +36,7 @@ class TriangleAppTests: XCTestCase {
     }
   }
   
+  // MARK: - Test Triangle
   func testDetectEquilateralTriangle() {
     XCTAssertEqual(try detectTriangle(2, 2, 2), "Segitiga Sama Sisi")
   }
@@ -59,6 +60,10 @@ class TriangleAppTests: XCTestCase {
     XCTAssertThrowsError(try detectTriangle(5, 1, 3)) { error in
       XCTAssertEqual(error as? TriangleError, TriangleError.inequalityInput)
     }
+  }
+  
+  func testDetectPythagorasTriangle() {
+    XCTAssertEqual(try detectTriangle(6, 8, 10), "Segitiga Siku-siku")
   }
   
   // MARK: - Functions
@@ -115,10 +120,13 @@ class TriangleAppTests: XCTestCase {
     // sehingga sisi dengan panjang yang mirip itu saling berdekatan
     // (1,2,1) -> (1,1,2) yakin bahwa sama kaki tanpa cek sisi ketiga
     // apakah A = B / B = C
-
     else if sides[0] == sides[1] || sides[1] == sides[2] {
       return "Segitiga Sama Kaki"
-    } else {
+    }
+    else if Double( (sides[0] * sides[0] + sides[1] * sides[1]) ).squareRoot() == Double(sides[2]) {
+      return "Segitiga Siku-siku"
+    }
+    else {
       return "Segitiga Sembarang"
     }
   }
