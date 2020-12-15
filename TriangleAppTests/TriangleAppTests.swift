@@ -51,6 +51,8 @@ class TriangleAppTests: XCTestCase {
   // Segitiga Sembarang
   func testDetectRandomTriangle() {
     XCTAssertEqual(try detectTriangle(5, 7, 9), "Segitiga Sembarang")
+    // This should be working, but not pushed :(
+    XCTAssertEqual(try detectTriangle(3, 5, 7), "Segitiga Sembarang")
   }
   
   func testInequalityTriangle() {
