@@ -50,7 +50,7 @@ class TriangleAppTests: XCTestCase {
   
   // Segitiga Sembarang
   func testDetectRandomTriangle() {
-    XCTAssertEqual(try detectTriangle(4, 5, 8), "Segitiga Sembarang")
+    XCTAssertEqual(try detectTriangle(5, 7, 9), "Segitiga Sembarang")
   }
   
   func testInequalityTriangle() {
