@@ -48,6 +48,7 @@ class TriangleAppTests: XCTestCase {
     XCTAssertEqual(try detectTriangle(10, 8, 10), "Segitiga Sama Kaki")
   }
   
+  // Segitiga Sembarang
   func testDetectRandomTriangle() {
     XCTAssertEqual(try detectTriangle(4, 5, 8), "Segitiga Sembarang")
   }
