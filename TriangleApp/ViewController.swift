@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    print(MyLibrary.text)
+    print(MyLibrary.txt)
     // Do any additional setup after loading the view.
   }
 
