@@ -15,7 +15,7 @@
 		EB5485DE25848B1500D49DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5485DC25848B1500D49DE1 /* LaunchScreen.storyboard */; };
 		EB5485E925848B1600D49DE1 /* TriangleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5485E825848B1600D49DE1 /* TriangleAppTests.swift */; };
 		EB5485F425848B1600D49DE1 /* TriangleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5485F325848B1600D49DE1 /* TriangleAppUITests.swift */; };
-		EB6CEA7725C7D0AD008CE3EA /* OurLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB6CEA7625C7D0AD008CE3EA /* OurLibrary */; };
+		EB60D9CA25C7EAAB000B6B96 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB60D9C925C7EAAB000B6B96 /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +50,7 @@
 		EB5485EF25848B1600D49DE1 /* TriangleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriangleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5485F325848B1600D49DE1 /* TriangleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleAppUITests.swift; sourceTree = "<group>"; };
 		EB5485F525848B1600D49DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB60D9BA25C7E992000B6B96 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../../../Desktop/Modules/MyLibrary; sourceTree = "<group>"; };
 		EBDD51D325C7A6FE007D1A84 /* OurLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OurLibrary; path = ../../../OurLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB6CEA7725C7D0AD008CE3EA /* OurLibrary in Frameworks */,
+				EB60D9CA25C7EAAB000B6B96 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +83,7 @@
 		EB5485C525848B1300D49DE1 = {
 			isa = PBXGroup;
 			children = (
+				EB60D9BA25C7E992000B6B96 /* MyLibrary */,
 				EBDD51D325C7A6FE007D1A84 /* OurLibrary */,
 				EB5485D025848B1300D49DE1 /* TriangleApp */,
 				EB5485E725848B1600D49DE1 /* TriangleAppTests */,
@@ -157,7 +159,7 @@
 			);
 			name = TriangleApp;
 			packageProductDependencies = (
-				EB6CEA7625C7D0AD008CE3EA /* OurLibrary */,
+				EB60D9C925C7EAAB000B6B96 /* MyLibrary */,
 			);
 			productName = TriangleApp;
 			productReference = EB5485CE25848B1300D49DE1 /* TriangleApp.app */;
@@ -230,6 +232,9 @@
 				Base,
 			);
 			mainGroup = EB5485C525848B1300D49DE1;
+			packageReferences = (
+				EB60D9C325C7EA5C000B6B96 /* XCRemoteSwiftPackageReference "MyLibrary" */,
+			);
 			productRefGroup = EB5485CF25848B1300D49DE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -609,10 +614,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		EB60D9C325C7EA5C000B6B96 /* XCRemoteSwiftPackageReference "MyLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/abhijana/Desktop/Modules/MyLibrary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		EB6CEA7625C7D0AD008CE3EA /* OurLibrary */ = {
+		EB60D9C925C7EAAB000B6B96 /* MyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = OurLibrary;
+			package = EB60D9C325C7EA5C000B6B96 /* XCRemoteSwiftPackageReference "MyLibrary" */;
+			productName = MyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
