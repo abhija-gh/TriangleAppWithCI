@@ -15,7 +15,7 @@
 		EB5485DE25848B1500D49DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5485DC25848B1500D49DE1 /* LaunchScreen.storyboard */; };
 		EB5485E925848B1600D49DE1 /* TriangleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5485E825848B1600D49DE1 /* TriangleAppTests.swift */; };
 		EB5485F425848B1600D49DE1 /* TriangleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5485F325848B1600D49DE1 /* TriangleAppUITests.swift */; };
-		EB60D9CA25C7EAAB000B6B96 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB60D9C925C7EAAB000B6B96 /* MyLibrary */; };
+		EB60D9D225C7EB7E000B6B96 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EB60D9D125C7EB7E000B6B96 /* MyLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB60D9CA25C7EAAB000B6B96 /* MyLibrary in Frameworks */,
+				EB60D9D225C7EB7E000B6B96 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +159,7 @@
 			);
 			name = TriangleApp;
 			packageProductDependencies = (
-				EB60D9C925C7EAAB000B6B96 /* MyLibrary */,
+				EB60D9D125C7EB7E000B6B96 /* MyLibrary */,
 			);
 			productName = TriangleApp;
 			productReference = EB5485CE25848B1300D49DE1 /* TriangleApp.app */;
@@ -626,9 +626,8 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EB60D9C925C7EAAB000B6B96 /* MyLibrary */ = {
+		EB60D9D125C7EB7E000B6B96 /* MyLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EB60D9C325C7EA5C000B6B96 /* XCRemoteSwiftPackageReference "MyLibrary" */;
 			productName = MyLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
