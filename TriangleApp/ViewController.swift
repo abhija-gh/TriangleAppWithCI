@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import OurLibrary
 
 class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    print(OurLibrary().text)
     // Do any additional setup after loading the view.
   }
 
